@@ -33,18 +33,6 @@ function App() {
           </div>
         </section>
 
-        <div
-          id="background"
-          // background pattern out of 4 logos that alternate and make a pattern
-          style={{
-            backgroundImage: `url(${Logo}), url(${Logo1}), url(${Logo2}), url(${Logo3})`,
-            backgroundSize: "200px 200px",
-            backgroundPosition: "0 0, 0 200px, 200px 0, 200px 200px",
-            backgroundRepeat: "repeat",
-          }}
-          className=" -z-10 fixed left-0 right-0 bottom-0 top-0 opacity-10"
-        ></div>
-
         <section className="motion-safe:animate-fadeIn" ref={(el) => targetsRef.current.push(el)} id="about">
           <div className="py-8 max-w-xl">
             <h2 className="text-4xl font-medium">digital times</h2>
