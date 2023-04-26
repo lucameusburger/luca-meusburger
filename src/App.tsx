@@ -36,8 +36,8 @@ function App() {
           </div>
         </section>
 
-        <div className="hidden xl:flex absolute left-[38rem] top-0">
-          <ul className="Words">
+        <div className="words-wrapper hidden xl:flex absolute left-[38rem] top-0 pb-96">
+          <ul className="Words pb-96">
             <li className="Words-line">
               <p>&nbsp;</p>
               <p>web dev</p>
