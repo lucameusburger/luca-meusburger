@@ -1,7 +1,10 @@
-import Logo from "./assets/logo.svg";
-import Logo1 from "./assets/logo-1.svg";
-import Logo2 from "./assets/logo-2.svg";
-import Logo3 from "./assets/logo-3.svg";
+// stair-text.scss
+import "./stair-text.scss";
+
+// import Logo from "./assets/logo.svg";
+// import Logo1 from "./assets/logo-1.svg";
+// import Logo2 from "./assets/logo-2.svg";
+// import Logo3 from "./assets/logo-3.svg";
 import ProjectPill from "./components/ProjectPill";
 import { useRef } from "react";
 
@@ -25,13 +28,46 @@ function App() {
 
   return (
     <div className=" w-full h-full text-purple-500 font-light selection:bg-purple-100">
-      <div className="container w-full h-full mx-auto p-4 md:p-10 ">
+      <div className="container relative w-full h-full mx-auto p-4 md:p-10 ">
         <section className="motion-safe:animate-fadeIn" ref={(el) => targetsRef.current.push(el)} id="header">
           <div className="pt-8 pb-64">
-            <h1 className="text-4xl font-medium">luca meusburger</h1>
+            <h1 className="text-4xl font-medium text-purple-500 ">luca meusburger</h1>
             <h2 className="text-4xl">web and app</h2>
           </div>
         </section>
+
+        <div className="hidden xl:flex absolute left-[38rem] top-0">
+          <ul className="Words">
+            <li className="Words-line">
+              <p>&nbsp;</p>
+              <p>web dev</p>
+            </li>
+            <li className="Words-line">
+              <p>web dev</p>
+              <p>design</p>
+            </li>
+            <li className="Words-line">
+              <p>design</p>
+              <p>app dev</p>
+            </li>
+            <li className="Words-line">
+              <p>app dev</p>
+              <p>by</p>
+            </li>
+            <li className="Words-line">
+              <p>by</p>
+              <p>luca</p>
+            </li>
+            <li className="Words-line">
+              <p>luca</p>
+              <p>meusburger</p>
+            </li>
+            <li className="Words-line">
+              <p>meusburger</p>
+              <p>&nbsp;</p>
+            </li>
+          </ul>
+        </div>
 
         <section className="motion-safe:animate-fadeIn" ref={(el) => targetsRef.current.push(el)} id="about">
           <div className="py-8 max-w-xl">
