@@ -36,38 +36,40 @@ function App() {
           </div>
         </section>
 
-        <div className="words-wrapper hidden xl:flex absolute left-[38rem] top-0 pb-96">
-          <ul className="Words pb-96">
-            <li className="Words-line">
-              <p>&nbsp;</p>
-              <p>web dev</p>
-            </li>
-            <li className="Words-line">
-              <p>web dev</p>
-              <p>design</p>
-            </li>
-            <li className="Words-line">
-              <p>design</p>
-              <p>app dev</p>
-            </li>
-            <li className="Words-line">
-              <p>app dev</p>
-              <p>by</p>
-            </li>
-            <li className="Words-line">
-              <p>by</p>
-              <p>luca</p>
-            </li>
-            <li className="Words-line">
-              <p>luca</p>
-              <p>meusburger</p>
-            </li>
-            <li className="Words-line">
-              <p>meusburger</p>
-              <p>&nbsp;</p>
-            </li>
-          </ul>
-        </div>
+        <section className="motion-safe:animate-fadeInSlow" ref={(el) => targetsRef.current.push(el)}>
+          <div className="words-wrapper hidden xl:flex absolute left-[38rem] top-0 pb-96 ">
+            <ul className="Words pb-96">
+              <li className="Words-line">
+                <p>&nbsp;</p>
+                <p>web dev</p>
+              </li>
+              <li className="Words-line">
+                <p>web dev</p>
+                <p>design</p>
+              </li>
+              <li className="Words-line">
+                <p>design</p>
+                <p>app dev</p>
+              </li>
+              <li className="Words-line">
+                <p>app dev</p>
+                <p>by</p>
+              </li>
+              <li className="Words-line">
+                <p>by</p>
+                <p>luca</p>
+              </li>
+              <li className="Words-line">
+                <p>luca</p>
+                <p>meusburger</p>
+              </li>
+              <li className="Words-line">
+                <p>meusburger</p>
+                <p>&nbsp;</p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
         <section className="motion-safe:animate-fadeIn" ref={(el) => targetsRef.current.push(el)} id="about">
           <div className="py-8 max-w-xl">
